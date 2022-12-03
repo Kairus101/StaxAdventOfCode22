@@ -142,8 +142,8 @@ Average bytes to solve: 19.5
     _		Load all the input as a string/array
     |j     		Split the string by newlines
     3/		Divide array into groups of 3
-    {		Begin mapping each string
-      E		Explode the array onto the stack
+    {		Begin mapping each array of strings
+      E		Explode the array of 3 strings onto the stack
       |&|&		Find the intersection of bags C, B, and A
       h		Get the first element (distincting)
       Vl		Load in a-z..A-Z
