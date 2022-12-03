@@ -3,7 +3,7 @@
 
 [Stax](https://github.com/tomtheisen/stax/tree/master/docs#stax) is a [code golfing](https://en.wikipedia.org/wiki/Code_golf) language, which means it is designed to be used to solve problems in as few bytes as possible.
 I haven't tried code golfing before and Stax seemed to be somewhat intuitive.
-This repo will document be as far as I can go, using Stax - not necessarily opting for the most efficient, or smallest programs - just whatever I can do that works.
+This repo will document as far as I can go, using Stax - not necessarily opting for the most efficient, or smallest programs - just whatever I can do that works.
 
 You can try these solutions yourself by visiting this [http://stax.tomtheisen.com/](http://stax.tomtheisen.com/)
 
