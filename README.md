@@ -128,7 +128,7 @@ Average bytes to solve: 19.5
       s		Swap the elements on the stack
       I		Find the index of our distinct intersection in V1
       ^		Add one because priority is 1-indexed
-    m		Complete mapping input line to common letter
+    m		Complete mapping input line to priority
     |+		Sum all the priorities
 
 
@@ -150,6 +150,6 @@ Average bytes to solve: 19.5
       s		Swap the elements on the stack
       I		Find the index of our distinct intersection in V1
       ^		Add one because priority is 1-indexed
-    m		Complete mapping input line to common letter
+    m		Complete mapping arrays of strings to priority
     |+		Sum all the priorities
 
