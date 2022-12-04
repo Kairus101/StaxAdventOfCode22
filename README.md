@@ -10,11 +10,11 @@ You can try these solutions yourself by visiting this [http://stax.tomtheisen.co
 Thanks to https://stackedit.io/app# for making this writeup easier
 
 ## Stats so far:
-Challenges completed: 6
+Challenges completed: 8
 
-Bytes used: 117
+Bytes used: 177
 
-Average bytes to solve: 19.5
+Average bytes to solve: 22.125
 
 ## Day 1a
 #### Code (16 bytes)
@@ -153,3 +153,61 @@ Average bytes to solve: 19.5
     m		Complete mapping arrays of strings to priority
     |+		Sum all the priorities
 
+
+
+## Day 4a
+#### Code (33 bytes)
+    _|j{',/{'-/m:f{em2/{E^|rmc{%m|MsE|L%=m|+
+    Packed:
+    ì■•└L|û⌂Ü╢σ}T«î]£Iï%╝○IëbH│ÅµSΩRâ
+
+#### Explanation
+    _		Load all the input as a string/array
+    |j     		Split the string by newlines
+    3/		Divide array into groups of 3
+    {		Begin mapping each array of strings
+      ',/		Create a ',' and split the string on it
+      {'-/m         Map each string, create a '-' and split on it
+      :f            Flatten the array back to 1 deep
+      {em           Convert all strings to numbers
+      2/            Split array into 2 equal-size arrays ([2][2])
+      {             For each array
+        E^          Extract the elements to the stack, increment the 2nd number
+        |r          Create a range
+      m             Complete mapping the arrays to ranges
+      c		Clone the ranges
+      {%m           Map the ranges to the lengths of the ranges
+      |M            Find the size of the biggest range
+      s             Swap the copied range back up
+      E             Explode the two range arrays onto the stack
+      |L            Union the two ranges
+      %=            Check if the size of the union is equal to the largest range
+    m               Complete mapping input line, to truthy (0,1)
+    |+              Count the lines that were truthy
+
+
+## Day 4b
+#### Code (27 bytes)
+    _|j{',/{'-/m:f{em2/{E^|rmE|&!!m|+
+    Packed:
+    ╕e┌j1îô═∩æ▬⌠jN⌡▌►c|ùíC=α9═☺
+
+#### Explanation
+    _		Load all the input as a string/array
+    |j     		Split the string by newlines
+    3/		Divide array into groups of 3
+    {		Begin mapping each array of strings
+      ',/		Create a ',' and split the string on it
+      {'-/m         Map each string, create a '-' and split on it
+      :f            Flatten the array back to 1 deep
+      {em           Convert all strings to numbers
+      2/            Split array into 2 equal-size arrays ([2][2])
+      {             For each array
+        E^          Extract the elements to the stack, increment the 2nd number
+        |r          Create a range
+      m             Complete mapping the arrays to ranges
+      E             Extract the elements to the stack
+      |&            Intersect the two ranges
+      !!            Is the result truthy (0,1)
+    m		Complete mapping arrays of strings to truthy (0,1)
+    |+		Count the lines that were truthy
