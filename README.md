@@ -211,3 +211,52 @@ Average bytes to solve: 22.125
       !!            Is the result truthy (0,1)
     m		Complete mapping arrays of strings to truthy (0,1)
     |+		Count the lines that were truthy
+
+
+## Day 5a
+#### Code (61 bytes)
+    _"`1`1"/Es|j{D4::mM{tmXs|j{jr2::{evmE^{dbYdxy0@xyxy@D&XaY@+xya&XdFddFx{hm
+    Packed:
+    Ç₧┬╜W╟h<PΘ▓♥£4╩ⁿ=%┌≤┬☺eX»%6■T◘╕╝²ùτüΓτ~◙σ¿Ω4█▒╠¬╞τmEº≤♥☺╟¥Ωía
+
+#### Explanation (coming soon)
+    _"`1`1"/
+    E
+    s
+    |j
+    {D4::m
+    M
+    {tm
+    X
+    s
+    |j
+    {
+      j
+      r
+      2::
+      {evm
+      E
+      ^
+      {
+        db
+        Yd
+        xy0@
+        xy
+        xy@
+        D
+    &
+
+    X
+    aY@
+    +
+    
+    xya&
+    X
+    d
+  F
+  dd
+F
+x
+{hm
+
+
